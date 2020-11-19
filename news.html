@@ -1,21 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>news</title>
-    <link rel="stylesheet" href="news.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>news</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="news.css">
 </head>
-<!-- banner -->
+
 <body>
- <section id="banner">
-<h1>NEWS</h1>
- </section>   
+  <!-- 導覽列 nav -->
+  <nav id="navbar">
+    <!-- 導覽列項目-logo -->
+    <div class="brand">
+      <a href="#"></a>
+    </div>
+    <img id="menu-btn1" src="./img/menu.png" alt="">
+    <!-- 導覽列項目-選單 -->
+    <div class="link">
+      <ul>
+        <li><a href="#!"><span class="en">STORY</span><span class="ch">品牌故事</span></a></li>
+        <li><a href="#!"><span class="en">NEWS</span><span class="ch">最新消息</span></a></li>
+        <li><a href="#!"><span class="en">ITEMS</span><span class="ch">商品專區</span></a></li>
+        <li><a href="#!"><span class="en">CONTACT</span><span class="ch">聯絡欸嚕踢</span></a></li>
+      </ul>
+    </div>
+    <!-- 導覽列項目-訂單相關 -->
+    <div class="order">
+      <a href="#!"><span></span><img src="../img/account.png" alt="member"></a>
+      <a href="#!"><span></span><img src="../img/cart.png" alt="cart"></a>
+    </div>
+    <div class="icon">
+      <a href="#!"><img src="../img/LT_FB.png" alt="FB"></a>
+      <a href="#!"><img src="../img/LT_IG.png" alt="IG"></a>
+    </div>
+  </nav>
+  <!-- banner -->
 
- <section id="newspage">
+  <section id="banner"><img id="banner1" src="./img/banner1.jpg" alt=""></section>
+  <section id="newspage">
+    <div class="title">
+      <img src="./img/left-rib.png" alt="">
+      <h1>最新消息</h1>
+      <img src="./img/right-rib.png" alt="">
+    </div>
+    <!--news頁面  -->
+    <div id="news">
+      <ul class="category">
+        <li> <a href="#!" class="list" id="home" data-gte-target="here" data-gte-offset="240">所有消息</a></li>
+        <li> <a href="#!" class="list" data-gte-target="here" data-gte-offset="240">官方公告</a></li>
+        <li> <a href="#!" class="list" data-gte-target="here" data-gte-offset="240">新品上市</a></li>
+        <li> <a href="#!" class="list" data-gte-target="here" data-gte-offset="240">活動快報</a></li>
+      </ul>
+      <div class="rectangle1"></div>
+      <div class="rectangle2"></div>
+      <img id="spoon" src="./img/spoon.png" alt="">
+      <!-- box區域1 -->
+      <div id="box1" data-aos="fade-right" data-aos-duration="3000">
+        <div class="img"><img src="./img/img1.jpg"></div>
+        <div class="card">
+          <h1>中秋禮盒預購中</h1>
+          <h2 class="card1">活動期間</h2>
+          <p class="card1">2020/09/03-2020/09/30</p>
+          <div id="btn1">DETAILAS</div>
+        </div>
+      </div>
+      <!-- box區域2 -->
+      <div id="box2" data-aos="fade-left" data-aos-duration="1000">
+        <div class="card">
+          <h1>💕新品登場💕</h1>
+          <!-- <h1>新品登場濃巧乳酪</h1> -->
+          <h2 class="card1">新品上市</h2>
+          <p class="card1">療癒下午茶🕜週三-週日 13:30-19:30​</p>
+          <div id="btn2">DETAILAS</div>
+        </div>
+        <div class="img"><img src="./img/box21.jpg"></div>
+      </div>
+      <!-- box區域3 -->
+      <img id="knife" src="./img/knife.png" alt="">
+      <div id="box3" data-aos="fade-right">
+        <div class="img"><img src="./img/box3.jpg"></div>
+        <div class="card" data-aos="fade-right" data-aos-duration="1000" data-gte-offset="200">
+          <h1>幸福手作:常溫小點</h1>
+          <h2 id="text" class="card1">👉🏻可娜麗</h2>
+          <h2 class="card1">👉🏻瑪德蓮-原味/巧克力</h2>
+          <div id="btn3">DETAILAS</div>
+        </div>
+      </div>
+      <img id="fork" src="./img/fork.png" alt="">
+      <!-- box區域四 -->
+      <div id="box4" data-aos="fade-left" data-aos-duration="1000">
 
- </section>
+        <div class="card" data-aos="fade-left" data-gte-offset="600" data-aos-duration="1000">
+          <h1>☕️ 提拉米蘇 ☕️</h1>
+          <h2 class="card1">今日幸福手作❤️</h2>
+          <p class="card1">療癒下午茶🕜週三-週日 13:30-19:30​</p>
+          <div id="btn4">DETAILAS</div>
+        </div>
+        <div class="img"><img src="./img/box41.jpg"></div>
+      </div>
+      <!-- 彈跳視窗 -->
+      <div id="menu-box">
+        <div id="menu">
+          <div id="menu-box2">
+            <div id="menu1" class="menu-text"><a href="#!">品牌故事</a>
+              <div class="menu-text"><a href="#!">最新消息</a></div>
+              <div class="menu-text"><a href="#!">商品專區</a></div>
+              <div class="menu-text"><a href="#!">聯絡欸嚕踢</a></div>
+            </div>
 
-    
+            <div id="menu-logo"><img src="./img/LTlogo-full.png" alt=""></div>
+            <h4>營業時間 / 週三至週日 13:30 – 19:30 (週一週二休息)</h4>
+            <h4>地址 / 320桃園市中壢區惠州街112號</h4>
+            <h4>電話 / 0963-599-056</h4>
+            <img class="menu-icon" src="./img/LT_IG.png" alt="">
+            <img class="menu-icon" src="./img/LT_FB.png" alt="">
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+      <!-- 彈跳視窗1 -->
+      <div id="Square1">
+        <div id="box-item">
+          <div class="img"><img src="./img/img1.jpg">
+            <h2 class="card1">活動期間</h2>
+            <p class="card1">2020/09/03-2020/09/30</p>
+          </div>
+          <div class="box-card">
+            <h1>中秋禮盒預購中</h1>
+            <p class="lorem">中秋節總是有烤肉香​中秋節總是要吃月餅​中秋節總是要看月圓​懵懂的我從來不知道為什麼​只覺得放假太開心啦~~​
+              ​漸漸的長大了​才發現…
+            <p class="lorem">中秋節吃的不是食物​而是幸福​中秋節看的不是月亮​是大家膩在一起的心❤️​
+              ​
+              屬於中秋節的幸福​
+              你準備好了嗎？😉</p>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- 彈跳視窗2 -->
+      <div id="Square2">
+        <div id="box-item2">
+          <div class="img"><img src="./img/box21.jpg">
+            <h2 class="card1">活動期間</h2>
+            <p class="card1">2020/09/03-2020/09/30</p>
+          </div>
+          <div class="box-card">
+            <h1>濃巧乳酪</h1>
+            <p class="lorem">利用慕斯的方式製作 使蛋糕體絲滑柔順 搭配香醇濃郁的黑巧克力使乳酪蛋糕更添風味</p>
+            <p class="lorem">
+              底部添加OREO餅乾
+              每一口都充滿巧克力的幸福滋味🥰</p>
+            <p class="lorem">還不快來嚐鮮😋</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 彈跳視窗3 -->
+      <div id="Square3">
+        <div id="box-item3">
+          <div class="img"><img src="./img/box3.jpg">
+            <h2 class="card1">活動期間</h2>
+            <p class="card1">2020/09/03-2020/09/30</p>
+          </div>
+          <div class="box-card">
+            <h1>幸福手作:常溫小點</h1>
+            <p class="lorem">👉🏻可娜麗
+              焦脆外殼，內層呈現柔軟的蜂巢狀組織，每咬一口都帶有香草籽➕蘭姆酒香氣，吃到底部還帶有焦香味！嗯~~這不就是幸福的味道嘛~🤤</p>
+            <hr>
+            <p class="lorem">👉🏻瑪德蓮-原味/巧克力
+              常溫小蛋糕，鬆軟口感，大小朋友的最愛🤤
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- 彈跳視窗4 -->
+      <div id="Square4">
+        <div id="box-item4">
+          <div class="img"><img src="./img/box41.jpg">
+            <h2 class="card1">活動期間</h2>
+            <p class="card1">2020/09/03-2020/09/30</p>
+          </div>
+          <div class="box-card">
+            <h1>提拉米蘇</h1>
+            <p class="lorem">將手指餅乾浸泡在
+              濃縮咖啡及咖啡酒裡
+              使手指餅乾充滿著咖啡香​
+              搭配馬斯卡彭乳酪慕斯
+              讓慕絲帶有著獨特香氣</p>
+            <hr>
+            <p class="lorem">讓人一口接一口
+              欲罷不能
+              義式經典 不能錯過
+              覺得一個米蘇不夠吃？
+              LT也有米蘇寶盒唷😆
+              一個人獨享
+              太幸福啦～～～💗
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+  <footer>
+    <a href="#" class="footer-logo"></a>
+    <div class="footer-block">
+      <h4>營業時間 / 週三至週日 13:30 – 19:30 (週一週二休息)</h4>
+      <h4>地址 / 320桃園市中壢區惠州街112號</h4>
+      <h4>電話 / 0963-599-056</h4>
+      <div class="icon">
+        <a href=""><img src="./img/LT_FB.png" alt="FB"></a>
+        <a href=""><img src="./img/LT_IG.png" alt="IG"></a>
+      </div>
+    </div>
+    <hr>
+    <p>Copyright &copy; 2020 LT pâtisserie all rights reserved.</p>
+  </footer>
+  <!-- AOS CDN -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <!-- jQuery CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="./script/./goto.js"></script>
 </body>
+
 </html>
