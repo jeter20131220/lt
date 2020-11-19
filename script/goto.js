@@ -86,6 +86,18 @@ $("#menu").click(function () {
     $("#menu-box").fadeOut("fast");
 });
 
+// 微互動
+$(window).bind('scroll',function(e){
+    parallaxScroll();
+});
+  
+function parallaxScroll(){
+    var scrolled = $(window).scrollTop();
+    $('#spoon').css('top',(700-(scrolled*.6))+'px');
+    $('#fork').css('top',(2600-(scrolled*.6))+'px');
+    $('#knife').css('top',(1600-(scrolled*.6))+'px');
+   
+}
 
 // 公告分類
 // 選取分類
